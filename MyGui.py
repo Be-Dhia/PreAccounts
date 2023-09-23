@@ -3,7 +3,7 @@ from Func import Fun
 class Gui:
 
     def __init__(self , root):
-        root.geometry('500x500+400+100')
+        root.geometry('500x200+400+100')
 
         #defining Resizable window resizable(bool , bool) width , height
         root.resizable(False , False )
@@ -26,7 +26,7 @@ class Gui:
         #root2.state('withdrawn')
 
         #Declare new Frame (!! not a form)
-        fr1 = Frame(width='500',height='100',bg='gray')
+        fr1 = Frame(width='500',height='100',bg='red')
         fr1.place(x=0 , y=100)
 
         #declare a button Button(frame , option)
