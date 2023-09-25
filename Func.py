@@ -3,10 +3,22 @@ import requests
 import selenium.webdriver
 from selenium.webdriver.chrome.options import Options
 import os
+import webbrowser
+from sys import exit
+
 
 
 
 class Fun:
+
+    def Fupdate():
+        myv = "1.0.0"
+        linkrep = requests.get("https://outide.6te.net/Servers.html")
+        nvr = linkrep.text
+        if(myv!=nvr):
+            messagebox.showinfo("Update","New Update is Released , Download Ver "+nvr)
+            webbrowser.open('https://outide.6te.net/cookini.zip')
+            exit()
 
     def onClick():
         messagebox.showinfo("Hello","Codded By Dhia")
